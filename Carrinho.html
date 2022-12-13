@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinéfilos.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    
+    <hr>
+    <img id="annoying" src="logo.png">
+    <h1 id="titulo">Cinéfilos.com</h1>
+    <h1 id="slogan">O seu site de cinema</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a id="catalogo" href="Catalogo.html">Catálogo</a></li>
+                <br>
+                <li><a id="cartaz" href="Cartaz.html">Em Cartaz</a></li>
+                <br>
+                <li><a id="carrinho" href="Carrinho.html">Ingressos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h4>eeee</h4>
+    <h1 id="compra">Compra de Ingressos:</h1>
+    <br>
+    <br>
+   <label for="filmes">Selecione um filme:</label>
+    <select onchange="filme(value)" name="filmes" id="filmes">
+        <option value="none">Selecione</option>
+        <option value="0">Avatar: O Caminho da Água</option>
+        <option value="1">Pantera Negra: Wakanda Para Sempre</option>
+        <option value="2">Adão Negro</option>
+        <option value="3">Noite Infeliz</option>
+        <option value="4">Irmãos de Honra</option>
+        <option value="5">O Menu</option>
+    </select>
+    <br><br>   
+    <label for="sala">Selecione uma sala:</label>
+    <select name="sala" id="sala" onchange="salas(value)">
+        <option value="none">Selecione</option>
+        <option value="0">Standard</option>
+        <option value="1">3D</option>
+        <option value="2">IMAX</option>
+    </select>
+    <main id="special">
+        <h3 id="default" class="single">Aviso: O Assento está ocupado.</h3>
+        <h3 id="confirma">Texto</h3>
+        <button type="button" id="nobut" onclick="Reserva()">Reservar</button>
+        <br>
+        <section id="anular">
+
+            <button type="button" class="taken" id="H28" onclick="funcao('H28')">28</button>
+            <button type="button" class="taken" id="H27" onclick="funcao('H27')">27</button>
+            <button type="button" class="free" id="H26" onclick="funcao('H26')">26</button>
+            <button type="button" class="taken" id="H25" onclick="funcao('H25')">25</button>
+            <button type="button" class="free" id="H24" onclick="funcao('H24')">24</button>
+            <button type="button" class="free" id="H23" onclick="funcao('H23')">23</button>
+            <button type="button" class="free" id="H22" onclick="funcao('H22')">22</button>
+            <button type="button" class="free" id="H21" onclick="funcao('H21')">21</button>
+            <button type="button" class="free" id="H20" onclick="funcao('H20')">20</button>
+            <button type="button" class="taken" id="H19" onclick="funcao('H19')">19</button>
+            <button type="button" class="taken" id="H18" onclick="funcao('H18')">18</button>
+            <button type="button" class="taken" id="H17" onclick="funcao('H17')">17</button>
+            <button type="button" class="taken" id="H16" onclick="funcao('H16')">16</button>
+            <button type="button" class="free" id="H15" onclick="funcao('H15')">15</button>
+            <button type="button" class="free" id="H14" onclick="funcao('H14')">14</button>
+            <button type="button" class="free" id="H13" onclick="funcao('H13')">13</button>
+            <button type="button" class="taken" id="H12" onclick="funcao('H12')">12</button>
+            <button type="button" class="free" id="H11" onclick="funcao('H11')">11</button>
+            <button type="button" class="free" id="H10" onclick="funcao('H10')">10</button>
+            <button type="button" class="taken" id="H09" onclick="funcao('H09')">09</button>
+            <button type="button" class="taken" id="H08" onclick="funcao('H08')">08</button>
+            <button type="button" class="taken" id="H07" onclick="funcao('H07')">07</button>
+            <button type="button" class="free" id="H06" onclick="funcao('H06')">06</button>
+            <button type="button" class="free" id="H05" onclick="funcao('H05')">05</button>
+            <button type="button" class="free" id="H04" onclick="funcao('H04')">04</button>
+            <button type="button" class="taken" id="H03" onclick="funcao('H03')">03</button>
+            <button type="button" class="taken" id="H02" onclick="funcao('H02')">02</button>
+            <button type="button" class="taken" id="H01" onclick="funcao('H01')">01</button>
+
+            <h2 class="fileira">H</h2>
+            <br>
+
+            <button type="button" class="taken" id="G28" onclick="funcao('G28')">28</button>
+            <button type="button" class="taken" id="G27" onclick="funcao('G27')">27</button>
+            <button type="button" class="free" id="G26" onclick="funcao('G26')">26</button>
+            <button type="button" class="free" id="G25" onclick="funcao('G25')">25</button>
+            <button type="button" class="taken" id="G24" onclick="funcao('G24')">24</button>
+            <button type="button" class="free" id="G23" onclick="funcao('G23')">23</button>
+            <button type="button" class="taken" id="G22" onclick="funcao('G22')">22</button>
+            <button type="button" class="free" id="G21" onclick="funcao('G21')">21</button>
+            <button type="button" class="free" id="G20" onclick="funcao('G20')">20</button>
+            <button type="button" class="taken" id="G19" onclick="funcao('G19')">19</button>
+            <button type="button" class="free" id="G18" onclick="funcao('G18')">18</button>
+            .............................
+            <button type="button" class="free" id="G15" onclick="funcao('G15')">15</button>
+            <button type="button" class="taken" id="G14" onclick="funcao('G14')">14</button>
+            <button type="button" class="taken" id="G13" onclick="funcao('G13')">13</button>
+            <button type="button" class="taken" id="G12" onclick="funcao('G12')">12</button>
+            <button type="button" class="free" id="G11" onclick="funcao('G11')">11</button>
+            ............................'
+            <button type="button" class="taken" id="G08" onclick="funcao('G08')">08</button>
+            <button type="button" class="free" id="G07" onclick="funcao('G07')">07</button>
+            <button type="button" class="free" id="G06" onclick="funcao('G06')">06</button>
+            <button type="button" class="free" id="G05" onclick="funcao('G05')">05</button>
+            <button type="button" class="free" id="G04" onclick="funcao('G04')">04</button>
+            <button type="button" class="free" id="G03" onclick="funcao('G03')">03</button>
+            <button type="button" class="free" id="G02" onclick="funcao('G02')">02</button>
+            <button type="button" class="free" id="G01" onclick="funcao('G01')">01</button>
+            
+            <h2 class="fileira">G</h2>
+            <br>
+
+            <button type="button" class="taken" class="taken" id="F28" onclick="funcao('F28')">28</button>
+            <button type="button" class="free" id="F27" onclick="funcao('F27')">27</button>
+            <button type="button" class="free" id="F26" onclick="funcao('F26')">26</button>
+            <button type="button" class="free" id="F25" onclick="funcao('F25')">25</button>
+            <button type="button" class="free" id="F24" onclick="funcao('F24')">24</button>
+            <button type="button" class="taken" id="F23" onclick="funcao('F23')">23</button>
+            <button type="button" class="taken" id="F22" onclick="funcao('F22')">22</button>
+            <button type="button" class="taken" id="F21" onclick="funcao('F21')">21</button>
+            <button type="button" class="taken" id="F20" onclick="funcao('F20')">20</button>
+            <button type="button" class="taken" id="F19" onclick="funcao('F19')">19</button>
+            <button type="button" class="taken" id="F18" onclick="funcao('F18')">18</button>
+            .............................
+            <button type="button" class="free" id="F15" onclick="funcao('F15')">15</button>
+            <button type="button" class="taken" id="F14" onclick="funcao('F14')">14</button>
+            <button type="button" class="taken" id="F13" onclick="funcao('F13')">13</button>
+            <button type="button" class="free" id="F12" onclick="funcao('F12')">12</button>
+            <button type="button" class="taken" id="F11" onclick="funcao('F11')">11</button>
+            ............................'
+            <button type="button" class="free" id="F08" onclick="funcao('F08')">08</button>
+            <button type="button" class="free" id="F07" onclick="funcao('F07')">07</button>
+            <button type="button" class="taken" id="F06" onclick="funcao('F06')">06</button>
+            <button type="button" class="free" id="F05" onclick="funcao('F05')">05</button>
+            <button type="button" class="free" id="F04" onclick="funcao('F04')">04</button>
+            <button type="button" class="taken" id="F03" onclick="funcao('F03')">03</button>
+            <button type="button" class="taken" id="F02" onclick="funcao('F02')">02</button>
+            <button type="button" class="taken" id="F01" onclick="funcao('F01')">01</button>
+            
+            <h2 class="fileira">F</h2>
+            <br>
+
+            <button type="button" class="free" id="E28" onclick="funcao('E28')">28</button>
+            <button type="button" class="free" id="E27" onclick="funcao('E27')">27</button>
+            <button type="button" class="taken" id="E26" onclick="funcao('E26')">26</button>
+            <button type="button" class="free" id="E25" onclick="funcao('E25')">25</button>
+            <button type="button" class="free" id="E24" onclick="funcao('E24')">24</button>
+            <button type="button" class="free" id="E23" onclick="funcao('E23')">23</button>
+            <button type="button" class="taken" id="E22" onclick="funcao('E22')">22</button>
+            <button type="button" class="free" id="E21" onclick="funcao('E21')">21</button>
+            <button type="button" class="free" id="E20" onclick="funcao('E20')">20</button>
+            <button type="button" class="free" id="E19" onclick="funcao('E19')">19</button>
+            <button type="button" class="taken" id="E18" onclick="funcao('E18')">18</button>
+            .............................
+            <button type="button" class="taken" id="E15" onclick="funcao('E15')">15</button>
+            <button type="button" class="taken" id="E14" onclick="funcao('E14')">14</button>
+            <button type="button" class="free" id="E13" onclick="funcao('E13')">13</button>
+            <button type="button" class="free" id="E12" onclick="funcao('E12')">12</button>
+            <button type="button" class="free" id="E11" onclick="funcao('E11')">11</button>
+            ............................................
+            <button type="button" class="free" id="E07" onclick="funcao('E07')">07</button>
+            <button type="button" class="taken" id="E06" onclick="funcao('E06')">06</button>
+            <button type="button" class="free" id="E05" onclick="funcao('E05')">05</button>
+            <button type="button" class="free" id="E04" onclick="funcao('E04')">04</button>
+            <button type="button" class="taken" id="E03" onclick="funcao('E03')">03</button>
+            <button type="button" class="free" id="E02" onclick="funcao('E02')">02</button>
+            <button type="button" class="free" id="E01" onclick="funcao('E01')">01</button>
+            
+            <h2 class="fileira">E</h2>
+            <br>
+
+
+            <button type="button" class="taken" id="D28" onclick="funcao('D28')">28</button>
+            <button type="button" class="taken" id="D27" onclick="funcao('D27')">27</button>
+            <button type="button" class="taken" id="D26" onclick="funcao('D26')">26</button>
+            <button type="button" class="free" id="D25" onclick="funcao('D25')">25</button>
+            <button type="button" class="taken" id="D24" onclick="funcao('D24')">24</button>
+            <button type="button" class="free" id="D23" onclick="funcao('D23')">23</button>
+            <button type="button" class="free" id="D22" onclick="funcao('D22')">22</button>
+            <button type="button" class="taken" id="D21" onclick="funcao('D21')">21</button>
+            <button type="button" class="free" id="D20" onclick="funcao('D20')">20</button>
+            <button type="button" class="taken" id="D19" onclick="funcao('D19')">19</button>
+            <button type="button" class="free" id="D18" onclick="funcao('D18')">18</button>
+            .............................
+            <button type="button" class="free" id="D15" onclick="funcao('D15')">15</button>
+            <button type="button" class="free" id="D14" onclick="funcao('D14')">14</button>
+            <button type="button" class="taken" id="D13" onclick="funcao('D13')">13</button>
+            <button type="button" class="free" id="D12" onclick="funcao('D12')">12</button>
+            <button type="button" class="free" id="D11" onclick="funcao('D11')">11</button>
+            ............................................
+            <button type="button" class="free" id="D07" onclick="funcao('D07')">07</button>
+            <button type="button" class="free" id="D06" onclick="funcao('D06')">06</button>
+            <button type="button" class="taken" id="D05" onclick="funcao('D05')">05</button>
+            <button type="button" class="free" id="D04" onclick="funcao('D04')">04</button>
+            <button type="button" class="free" id="D03" onclick="funcao('D03')">03</button>
+            <button type="button" class="free" id="D02" onclick="funcao('D02')">02</button>
+            <button type="button" class="taken" id="D01" onclick="funcao('D01')">01</button>
+            <h2 class="fileira">D</h2>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <button type="button" class="taken" id="C28" onclick="funcao('C28')">28</button>
+            <button type="button" class="free" id="C27" onclick="funcao('C27')">27</button>
+            <button type="button" class="free" id="C26" onclick="funcao('C26')">26</button>
+            <button type="button" class="free" id="C25" onclick="funcao('C25')">25</button>
+            ..........................................................'
+            <button type="button" class="free" id="C20" onclick="funcao('C20')">20</button>
+            <button type="button" class="taken" id="C19" onclick="funcao('C19')">19</button>
+            <button type="button" class="taken" id="C18" onclick="funcao('C18')">18</button>
+            ...................................................................................................................................................'
+            <button type="button" class="free" id="C07" onclick="funcao('C07')">07</button>
+            <button type="button" class="taken" id="C06" onclick="funcao('C06')">06</button>
+            <button type="button" class="free" id="C05" onclick="funcao('C05')">05</button>
+            <button type="button" class="taken" id="C04" onclick="funcao('C04')">04</button>
+            <button type="button" class="taken" id="C03" onclick="funcao('C03')">03</button>
+            <button type="button" class="taken" id="C02" onclick="funcao('C02')">02</button>
+            <button type="button" class="taken" id="C01" onclick="funcao('C01')">01</button>
+
+            <h2 class="fileira">C</h2>
+            <br>
+
+            <button type="button" class="free" id="B28" onclick="funcao('B28')">28</button>
+            <button type="button" class="taken" id="B27" onclick="funcao('B27')">27</button>
+            <button type="button" class="free" id="B26" onclick="funcao('B26')">26</button>
+            <button type="button" class="free" id="B25" onclick="funcao('B25')">25</button>
+            ..........................................................'
+            <button type="button" class="taken" id="B20" onclick="funcao('B20')">20</button>
+            <button type="button" class="taken" id="B19" onclick="funcao('B19')">19</button>
+            <button type="button" class="taken" id="B18" onclick="funcao('B18')">18</button>
+            ...................................................................................................................................................'
+            <button type="button" class="taken" id="B07" onclick="funcao('B07')">07</button>
+            <button type="button" class="taken" id="B06" onclick="funcao('B06')">06</button>
+            <button type="button" class="taken" id="B05" onclick="funcao('B05')">05</button>
+            <button type="button" class="free" id="B04" onclick="funcao('B04')">04</button>
+            <button type="button" class="free" id="B03" onclick="funcao('B03')">03</button>
+            <button type="button" class="free" id="B02" onclick="funcao('B02')">02</button>
+            <button type="button" class="taken" id="B01" onclick="funcao('B01')">01</button>
+            
+            <h2 class="fileira">B</h2>
+            <br>
+
+            <button type="button" class="free" id="A28" onclick="funcao('A28')">28</button>
+            <button type="button" class="taken" id="A27" onclick="funcao('A27')">27</button>
+            <button type="button" class="taken" id="A26" onclick="funcao('A26')">26</button>
+            <button type="button" class="taken" id="A25" onclick="funcao('A25')">25</button>
+            ..........................................................'
+            <button type="button" class="taken" id="A20" onclick="funcao('A20')">20</button>
+            <button type="button" class="free" id="A19" onclick="funcao('A19')">19</button>
+            <button type="button" class="free" id="A18" onclick="funcao('A18')">18</button>
+            ..............................
+            <button type="button" class="free" id="A15" onclick="funcao('A15')">15</button>
+            <button type="button" class="free" id="A14" onclick="funcao('A14')">14</button>
+            <button type="button" class="taken" id="A13" onclick="funcao('A13')">13</button>
+            <button type="button" class="free" id="A12" onclick="funcao('A12')">12</button>
+            <button type="button" class="free" id="A11" onclick="funcao('A11')">11</button>
+            <button type="button" class="taken" id="A10" onclick="funcao('A10')">10</button>
+            <button type="button" class="taken" id="A09" onclick="funcao('A09')">09</button>
+            <button type="button" class="free" id="A08" onclick="funcao('A08')">08</button>
+            <button type="button" class="free" id="A07" onclick="funcao('A07')">07</button>
+            <button type="button" class="taken" id="A06" onclick="funcao('A06')">06</button>
+            <button type="button" class="taken" id="A05" onclick="funcao('A05')">05</button>
+            <button type="button" class="taken" id="A04" onclick="funcao('A04')">04</button>
+            <button type="button" class="taken" id="A03" onclick="funcao('A03')">03</button>
+            <button type="button" class="taken" id="A02" onclick="funcao('A02')">02</button>
+            <button type="button" class="taken" id="A01" onclick="funcao('A01')">01</button>
+            <h2 class="fileira">A</h2>
+            <br><br><br><br><br>
+            <h1 id="tela">TELA</h1>
+            <br>
+            <br>
+        </section>
+        <br>
+    </main>
+    <footer>
+        <h1>Cinéfilos.com</h1>
+        <h2>A melhor experiência de cinema, a um clique de distância.</h2>
+        <p><span>Sobre nós:</span><br>O Cinéfilos.com é a sua escolha ideal para o maior banco de dados sobre filmes do mundo! Aqui você também encontra uma plataforma simples para agilizar sua compra de ingressos e até mesmo assistir produções pelo nosso serviço de streaming. Nossas salas, em parceria com nossa subsidiária Cinéfilo Media, esão equipadas com equipamento de ponta, Como IMAX e Dolby Cinema, a um preço acessível. Aproveite!</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
